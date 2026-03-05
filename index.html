@@ -19,6 +19,7 @@
         .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .tech-badge { background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%); border: 1px solid rgba(99, 102, 241, 0.3); transition: all 0.3s ease; }
         .project-card { background: linear-gradient(145deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%); border: 1px solid rgba(148, 163, 184, 0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .project-card:hover { transform: translateY(-8px); border-color: rgba(99, 102, 241, 0.5); box-shadow: 0 20px 40px rgba(99, 102, 241, 0.1); }
         .grid-pattern { background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0); background-size: 40px 40px; }
         .animate-float { animation: float 6s ease-in-out infinite; }
         @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
@@ -44,7 +45,7 @@
                     <a href="#expertise" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Expertise</a>
                     <a href="#contact" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Contact</a>
                 </div>
-                <a href="https://github.com/umarlamiya" target="_blank" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 transition-all text-sm font-medium">
+                <a href="https://github.com/umarlamiya" target="_blank" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 transition-all">
                     <i data-lucide="github" class="w-4 h-4"></i><span>GitHub</span>
                 </a>
             </div>

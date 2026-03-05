@@ -3,57 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Professional Portfolio</title>
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to right, #1a1a1a, #2a2a2a);
-        }
-        .glass {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         }
-        .accent {
-            color: #4FD1C5;
-            text-shadow: 0 0 10px #4FD1C5;
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, rgba(0, 51, 102, 0.8), rgba(0, 0, 0, 0.8));
+        }
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .project {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.5);
+        }
+        .project h2 {
+            color: #00ffff;
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white">
-    <div class="container mx-auto p-5">
-        <header class="text-center mb-10">
-            <h1 class="text-4xl font-bold accent">Umarlamiya's Portfolio</h1>
-            <h2 class="text-2xl mt-2">NSITF-RAG-AUTOMATION</h2>
-        </header>
-        <section class="glass mb-10">
-            <h3 class="text-3xl font-semibold mb-5">About Me</h3>
-            <p>Welcome to my professional portfolio. I am a dedicated automation engineer specializing in NSITF-RAG automation processes and interested in leveraging technology to improve operational efficiency.</p>
-        </section>
-        <section class="glass mb-10">
-            <h3 class="text-3xl font-semibold mb-5">Expertise</h3>
-            <ul class="list-disc pl-5">
-                <li>Automation Engineering</li>
-                <li>Software Development</li>
-                <li>Cloud Computing</li>
-                <li>Data Analysis</li>
-                <li>Tailwind CSS Design</li>
-            </ul>
-        </section>
-        <section class="glass mb-10">
-            <h3 class="text-3xl font-semibold mb-5">All Projects</h3>
-            <ul class="list-disc pl-5">
-                <li><a class="accent" href="#">Project 1: NSITF Automation Tool</a></li>
-                <li><a class="accent" href="#">Project 2: Automation Workflow for RAG</a></li>
-                <li><a class="accent" href="#">Project 3: Data Analysis Project</a></li>
-                <li><a class="accent" href="#">Project 4: Tailwind CSS Dashboard</a></li>
-            </ul>
-        </section>
-        <footer class="text-center mt-10">
-            <p>&copy; 2026 Umarlamiya. All rights reserved.</p>
-        </footer>
-    </div>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    <section class="projects">
+        <div class="project">
+            <h2>NSITF-RAG-AUTOMATION</h2>
+            <p>A brief description of the NSITF-RAG-AUTOMATION.</p>
+        </div>
+        <div class="project">
+            <h2>medroute-core</h2>
+            <p>A brief description of medroute-core.</p>
+        </div>
+        <div class="project">
+            <h2>WiFi DensePose</h2>
+            <p>A brief description of WiFi DensePose.</p>
+        </div>
+        <!-- Add more projects here -->
+    </section>
 </body>
 </html>
